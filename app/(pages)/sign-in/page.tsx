@@ -6,8 +6,9 @@ import Heart from "@/public/assets/img/sign-in/heart.svg";
     
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { useState, FormEvent } from "react";
-import { useRouter } from "next/navigation";
 
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 // import PhoneInput from "@/app/components/phone-input";
 import GoogleAuth from "@/app/components/auth/google";
 import { Button } from "primereact/button";
@@ -15,7 +16,6 @@ import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
 import { Divider } from "primereact/divider";
 export default function Login() {
-  const router = useRouter();
   
   async function handleSubmit(event: Event) {
     event.preventDefault();
@@ -45,7 +45,6 @@ export default function Login() {
 
   return (
     <div className="relative min-h-screen flex bg-white overflow-hidden">
-      {/* Left side – form */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-10 md:px-20 z-10">
         <div className="w-full flex justify-start absolute top-0 left-0 p-5 md:p-10">
           <Image
@@ -93,7 +92,7 @@ export default function Login() {
               <Button
                 className="w-full max-w-sm flex justify-center items-center bg-primary-500 hover:bg-primary-600 
                text-white font-medium py-3 rounded-lg transition-colors text-center"
-                onClick={(event) => handleSubmit(event as FormEvent<HTMLFormElement>)}
+                // onClick={(event) => handleSubmit(event as FormEvent<HTMLFormElement>)}
               >
                 Sign in
               </Button>
