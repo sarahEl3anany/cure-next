@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Georgia'), url('georgia/Georgia-Regular.ttf') format('ttf');
+}
