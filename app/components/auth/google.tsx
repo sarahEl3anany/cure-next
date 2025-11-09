@@ -7,8 +7,10 @@ import GoogleLogo from "@/public/assets/img/sign-in/googleLogo.svg";
 
 import { Button } from "primereact/button";
 
-
-function GoogleAuth() {
+type GoogleAuthProps = {
+  txt: string;
+};
+function GoogleAuth(props: GoogleAuthProps) {
   const login = useGoogleLogin({
     onSuccess: (tokenResponse) => console.log("✅ Login success", tokenResponse),
     onError: (err) => console.error("❌ Login failed", err),
@@ -21,7 +23,7 @@ function GoogleAuth() {
     >
       <Image src={GoogleLogo} alt="Google Logo" className="w-5 h-5" />
       <span className="text-secondary-500 font-montserratMedium text-sm">
-        Sign in with Google
+        {props.txt}
       </span>
     </Button>
   );

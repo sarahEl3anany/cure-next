@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import usersData from "../../../data/users.json";
+import usersData from "@/app/data/users.json"
+
 export async function POST(request: Request) {
   const body = await request.json();
   const email = body.email;

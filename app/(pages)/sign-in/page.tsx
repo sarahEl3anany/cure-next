@@ -11,11 +11,16 @@ import { useRef } from "react";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import GoogleAuth from "@/app/components/auth/google";
 
-import { useLoginForm } from "@/app/hooks/auth/useSignInForm";
+import { useSignInForm } from "@/app/hooks/auth/useSignInForm";
 
-export default function LoginPage() {
+export default function SignIn() {
   const toast = useRef<Toast | null>(null);
-  const { control, handleSubmit, formState: { errors }, onSubmit } = useLoginForm(toast);
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+    onSubmit,
+  } = useSignInForm(toast);
 
   return (
     <div>
@@ -98,7 +103,7 @@ export default function LoginPage() {
         <GoogleOAuthProvider
           clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID!}
         >
-          <GoogleAuth />
+          <GoogleAuth txt="Sign in with Google" />
         </GoogleOAuthProvider>
       </div>
       <div className="w-full text-center">
@@ -117,7 +122,3 @@ export default function LoginPage() {
     </div>
   );
 }
-
-
-
-

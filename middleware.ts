@@ -4,13 +4,12 @@ import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
   const token = request.cookies.get("token")?.value;
-
   const pathname = request.nextUrl.pathname;
+  const publicPaths = ["/sign-in", "/sign-up"];
 
-  if (pathname.startsWith("/sign-in")) {
+  if (publicPaths.some(path => pathname.startsWith(path))) {
     return NextResponse.next();
   }
-
   if (!token) {
     const signInUrl = new URL("/sign-in", request.url);
     return NextResponse.redirect(signInUrl);
