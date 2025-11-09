@@ -10,5 +10,17 @@
     "name": "Omar",
     "email": "omar@example.com",
     "password": "password123"
+  },
+  {
+    "id": 3,
+    "name": "Sarah",
+    "email": "sarah@example.com",
+    "password": "password456"
+  },
+  {
+    "id": 4,
+    "name": "Su",
+    "email": "sarah.zeftawy@gmail.com",
+    "password": "Sarah@123"
   }
 ]

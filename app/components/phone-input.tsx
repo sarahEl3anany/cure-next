@@ -175,3 +175,9 @@ const FlagComponent = ({ country, countryName }: FlagProps) => {
 };
 
 export default PhoneInput;
+// usage example:
+// {/* <PhoneInput
+//   name="phone"
+//   className="w-full bg-neutral-50 rounded-lg border-0 text-neutral-500 font-montserrat text-base"
+//   placeholder="Enter your phone number"
+// /> */}
