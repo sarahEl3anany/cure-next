@@ -4,6 +4,7 @@
 @import '../public/assets/fonts/georgia.css';
 @import '../public/assets/fonts/montserrat.css';
 @import "tw-animate-css";
+@import '../public/assets/css/theme.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -187,7 +188,6 @@
   body {
     @apply bg-background text-foreground;
   }
-  @import '../public/assets/css/theme.css';
 }
 
 .dark {
