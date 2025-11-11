@@ -145,6 +145,7 @@
   font-size: 12px;
 }
 
+
 :root {
   --radius: 0.625rem;
   --card: oklch(1 0 0);

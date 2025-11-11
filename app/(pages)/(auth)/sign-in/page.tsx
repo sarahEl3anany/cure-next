@@ -69,8 +69,8 @@ export default function SignIn() {
                 <Password
                   {...field}
                   name="password"
-                  className="w-full bg-neutral-50 rounded-lg border-0 text-neutral-500 font-montserrat text-base p-2"
-                  inputClassName="w-full outline-none focus:ring-0 focus:outline-none"
+                  className="w-full bg-neutral-50 rounded-lg text-neutral-500 font-montserrat text-base p-2"
+                  inputClassName="w-full outline-none focus:ring-0 focus:outline-none bg-neutral-50 border-0"
                   placeholder="Password"
                 />
               )}
@@ -91,6 +91,11 @@ export default function SignIn() {
             </Button>
           </div>
         </form>
+      </div>
+      <div className="flex justify-end mt-3">
+        <span className="text-red-500 font-montserrat text-xs">
+          <a href="/forget-password"> Forget password?</a>
+        </span>
       </div>
       <div className="w-full max-w-sm">
         <Divider layout="horizontal">

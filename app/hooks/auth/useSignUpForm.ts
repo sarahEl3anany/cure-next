@@ -8,6 +8,7 @@ import { Toast } from "primereact/toast";
 
 export const loginSchema = z
   .object({
+    name: z.string().min(1, { message: "Full name is required!" }),
     email: z
       .string()
       .min(3, { message: "Min email length is 3 characters" })
@@ -39,7 +40,7 @@ export function useSignUpForm(toastRef: React.RefObject<Toast | null>) {
 
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(loginSchema),
-    defaultValues: { email: "", password: "", confirmPassword: "", phone: "" },
+    defaultValues: { name : "", email: "", password: "", confirmPassword: "", phone: "" },
     mode: "onChange",
   });
 
@@ -48,7 +49,8 @@ export function useSignUpForm(toastRef: React.RefObject<Toast | null>) {
       const res = await fetch("/api/auth/sign-up", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
+        body: JSON.stringify({
+            name: data.name, 
             email: data.email, 
             password: data.password,
             confirmPassword: data.confirmPassword,

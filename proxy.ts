@@ -1,11 +1,10 @@
-// middleware.ts
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const token = request.cookies.get("token")?.value;
   const pathname = request.nextUrl.pathname;
-  const publicPaths = ["/sign-in", "/sign-up"];
+  const publicPaths = ["/sign-in", "/sign-up", "/forget-password", "/verify-code", "/change-password"];
 
   if (publicPaths.some(path => pathname.startsWith(path))) {
     return NextResponse.next();

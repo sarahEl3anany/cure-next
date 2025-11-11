@@ -38,6 +38,29 @@ export default function SignUp() {
         >
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
+              Full Name
+            </label>
+            <Controller
+              control={control}
+              name="name"
+              render={({ field }) => (
+                <InputText
+                  {...field}
+                  name="name"
+                  className="w-full bg-neutral-50 rounded-lg border-0 text-neutral-500 font-montserrat text-base p-2"
+                  placeholder="Full Name"
+                />
+              )}
+            />
+            {errors.name && (
+              <p className="mt-1 text-sm text-red-600">
+                {errors.name.message}
+              </p>
+            )}
+          </div> 
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
               Email
             </label>
             <Controller
@@ -84,7 +107,6 @@ export default function SignUp() {
             )}
           </div>
 
-
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Password
@@ -96,8 +118,8 @@ export default function SignUp() {
                 <Password
                   {...field}
                   name="password"
-                  className="w-full bg-neutral-50 rounded-lg border-0 text-neutral-500 font-montserrat text-base p-2"
-                  inputClassName="w-full outline-none focus:ring-0 focus:outline-none"
+                  className="w-full bg-neutral-50 rounded-lg text-neutral-500 font-montserrat text-base p-2"
+                  inputClassName="w-full outline-none focus:ring-0 focus:outline-none bg-neutral-50 border-0"
                   placeholder="Password"
                 />
               )}
@@ -119,8 +141,8 @@ export default function SignUp() {
                 <Password
                   {...field}
                   name="confirmPassword"
-                  className="w-full bg-neutral-50 rounded-lg border-0 text-neutral-500 font-montserrat text-base p-2"
-                  inputClassName="w-full outline-none focus:ring-0 focus:outline-none"
+                  className="w-full bg-neutral-50 rounded-lg text-neutral-500 font-montserrat text-base p-2"
+                  inputClassName="w-full outline-none focus:ring-0 focus:outline-none bg-neutral-50 border-0"
                   placeholder="Confirm Password"
                 />
               )}
@@ -162,10 +184,10 @@ export default function SignUp() {
         </span>
         <span>
           <a
-            href="/sign-up"
+            href="/sign-in"
             className="font-montserratMedium text-primary-500 text-base ml-1"
           >
-            Sign up
+            Sign in
           </a>
         </span>
       </div>
