@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useGoogleLogin } from "@react-oauth/google";
 
 import GoogleLogo from "@/app/assets/img/sign-in/googleLogo.svg";
@@ -21,7 +20,7 @@ function GoogleAuth(props: GoogleAuthProps) {
       className="w-full flex items-center justify-center gap-3 border py-3
        border-neutral-300 hover:bg-neutral-100 rounded-lg transition-colors text-center"
     >
-      <Image src={GoogleLogo} alt="Google Logo" className="w-5 h-5" />
+      <GoogleLogo className="w-5 h-5" />
       <span className="text-secondary-500 font-montserratMedium text-sm">
         {props.txt}
       </span>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { PrimeReactProvider } from "primereact/api";
 import "./globals.css";
 import Image from "next/image";
-import l1 from "@/app/assets/img/sign-in/1.svg";
-import l2 from "@/app/assets/img/sign-in/2.svg";
-import Heart from "@/app/assets/img/sign-in/heart.svg";
+import l1 from "@/app/assets/img/sign-in/1.png";
+import l2 from "@/app/assets/img/sign-in/2.png";
+import HeartComponent from "./components/SVGs/heart";
 import { cookies } from 'next/headers'
 export const metadata: Metadata = {
   title: "Cure",
@@ -22,23 +22,17 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <PrimeReactProvider>
-          <div className="relative min-h-screen flex bg-white overflow-hidden">
             {token ? (
-              <div>
+              <div className="relative min-h-screen flex bg-white overflow-hidden">
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-10 md:px-20 z-10">
                   {children}
                 </div>
               </div>
              ) : (
-              <div>
+              <div className="relative min-h-screen flex bg-white overflow-hidden">
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-10 md:px-20 z-10">
                   <div className="w-full flex justify-start absolute top-0 left-0 p-5 md:p-10">
-                    <Image
-                      src={Heart}
-                      alt="Heart"
-                      loading="eager"
-                      className="absolute left-7 top-5 w-8 h-8 object-contain"
-                    />
+                    <HeartComponent className="absolute left-7 top-5 w-8 h-8 object-contain" />
                   </div>
                   {children}
                 </div>
@@ -58,7 +52,6 @@ export default async function RootLayout({
                 </div>
               </div>
              )}
-          </div>
         </PrimeReactProvider>
       </body>
     </html>
