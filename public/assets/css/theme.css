@@ -25,6 +25,8 @@
   -moz-transition: background-color 0.2s, color 0.2s, border-color 0.2s,    box-shadow 0.2s;
   -ms-transition: background-color 0.2s, color 0.2s, border-color 0.2s,    box-shadow 0.2s;
   -o-transition: background-color 0.2s, color 0.2s, border-color 0.2s,    box-shadow 0.2s;
+  -webkit-font-feature-settings: var(--font-feature-settings, normal);
+  -moz-font-feature-settings: var(--font-feature-settings, normal);
 }
 .p-inputtext:enabled:hover {
   border-color: #3b82f6;

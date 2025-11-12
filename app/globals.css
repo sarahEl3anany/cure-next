@@ -1,10 +1,9 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
 @import 'primereact/resources/primereact.min.css';
-@import './assets/fonts/georgia.css';
-@import './assets/fonts/montserrat.css';
+@import '../public/assets/fonts/georgia.css';
+@import '../public/assets/fonts/montserrat.css';
 @import "tw-animate-css";
-@import './assets/css/theme.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -145,8 +144,13 @@
 .text-xs {
   font-size: 12px;
 }
-
-
+.p-inputotp-input {
+  background-color: var(--color-neutral-50);
+  border-color: var(--color-neutral-200);
+  border-radius: var(--radius-md) !important;
+  color: var(--color-neutral-500);
+  padding: calc(var(--spacing) * 2) !important;
+}
 :root {
   --radius: 0.625rem;
   --card: oklch(1 0 0);
@@ -188,6 +192,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  @import '../public/assets/css/theme.css';
 }
 
 .dark {

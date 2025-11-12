@@ -3,9 +3,9 @@ import { PrimeReactProvider } from "primereact/api";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
-import l1 from "@/app/assets/img/sign-in/1.svg";
-import l2 from "@/app/assets/img/sign-in/2.svg";
-import Heart from "@/app/assets/img/sign-in/heart.svg";
+import l1 from "@/public/assets/img/sign-in/1.svg";
+import l2 from "@/public/assets/img/sign-in/2.svg";
+import Heart from "@/public/assets/img/sign-in/heart.svg";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

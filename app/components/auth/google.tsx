@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useGoogleLogin } from "@react-oauth/google";
 
-import GoogleLogo from "@/app/assets/img/sign-in/googleLogo.svg";
+import GoogleLogo from "@/public/assets/img/sign-in/googleLogo.svg";
 
 import { Button } from "primereact/button";
 

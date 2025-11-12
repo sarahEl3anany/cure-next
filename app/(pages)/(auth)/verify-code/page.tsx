@@ -41,7 +41,7 @@ export default function VerifyCode() {
                             <InputOtp
                                 {...field}
                                 name="code"
-                                className="w-full bg-neutral-50 rounded-lg border text-neutral-500 font-montserrat text-base p-2"
+                                className="w-full bg-neutral-50 border-neutral-200 rounded-lg border text-neutral-500 font-montserrat text-base p-2"
                                 length={6}
                                 integerOnly
                                 onChange={(e) => field.onChange(e.value)}
