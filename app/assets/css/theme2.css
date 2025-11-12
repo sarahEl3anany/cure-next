@@ -17,11 +17,12 @@
 
 
 :root {
+  --primary-color: #145db8 !important;
+  --primary-hover-color: #145db8 !important;
   --primary-50: #e8eff8 !important;
   --primary-100: #b6cde9 !important;
   --primary-200: #93b4de !important;
-  --primary-300: #6292cf !important;
-  --primary-400: #437dc6 !important;
+  --primary-300: #437dc6 !important;
   --primary-500: #145db8 !important;
   --primary-600: #1255a7 !important;
   --primary-700: #0e4283 !important;
@@ -29,6 +30,80 @@
   --primary-900: #08274d !important;
   --primary-color: #145db8 !important;
   --primary-hover-color: #145db8 !important;
+  --checkbox-icon-size: 17px !important;
+  --checkbox-width: 17px !important;
+  --checkbox-height: 17px !important;
+  --checkbox-border-radius: 4px !important;
+  --checkbox-focus-ring-width: 2px !important;
+  --form-field-border-color: #145db8 !important;
+  --button-primary-active-background: #145db8 !important;
+
+  --secondary-50: #e6e8ea !important;
+  --secondary-100: #b2b7be !important;
+  --secondary-200: #8c949e !important;
+  --secondary-300: #586372 !important;
+  --secondary-400: #374556 !important;
+  --secondary-500: #05162c !important;
+  --secondary-600: #051428 !important;
+  --secondary-700: #04101f !important;
+  --secondary-800: #030c18 !important;
+  --secondary-900: #020912 !important;
+
+  --neutral-50: #f5f6f7 !important;
+  --neutral-100: #dfe2e5 !important;
+  --neutral-200: #d0d4d8 !important;
+  --neutral-300: #bbc1c7 !important;
+  --neutral-400: #adb5bc !important;
+  --neutral-500: #99a2ab !important;
+  --neutral-600: #8b939c !important;
+  --neutral-700: #6d7379 !important;
+  --neutral-800: #54595e !important;
+  --neutral-900: #404448 !important;
+
+  --red-50: #ffeded !important;
+  --red-100: #fec7c8 !important;
+  --red-200: #feacae !important;
+  --red-300: #fd8688 !important;
+  --red-400: #fd6f71 !important;
+  --red-500: #fc4b4e !important;
+  --red-600: #e54447 !important;
+  --red-700: #b33537 !important;
+  --red-800: #8b292b !important;
+  --red-900: #6a2021 !important;
+
+  --yellow-50: #fff6e9 !important;
+  --yellow-100: #ffe4bc !important;
+  --yellow-200: #ffd79b !important;
+  --yellow-300: #ffc46e !important;
+  --yellow-400: #ffb951 !important;
+  --yellow-500: #ffa726 !important;
+  --yellow-600: #e89823 !important;
+  --yellow-700: #b5771b !important;
+  --yellow-800: #8c5c15 !important;
+  --yellow-900: #6b4610 !important;
+
+  --blue-50: #e8f4fc !important;
+  --blue-100: #b6ddf6 !important;
+  --blue-200: #93ccf2 !important;
+  --blue-300: #62b5ec !important;
+  --blue-400: #43a6e9 !important;
+  --blue-500: #1490e3 !important;
+  --blue-600: #1283cf !important;
+  --blue-700: #0e66a1 !important;
+  --blue-800: #0b4f7d !important;
+  --blue-900: #083c5f !important;
+
+  --green-50: #edf7ee !important;
+  --green-100: #c8e6c9 !important;
+  --green-200: #addaaf !important;
+  --green-300: #87c98a !important;
+  --green-400: #70bf73 !important;
+  --green-500: #4caf50 !important;
+  --green-600: #459f49 !important;
+  --green-700: #367c39 !important;
+  --green-800: #2a602c !important;
+  --green-900: #204a22 !important;
+
   --checkbox-icon-size: 17px !important;
   --checkbox-width: 17px !important;
   --checkbox-height: 17px !important;
@@ -4440,8 +4515,6 @@
   .p-panel .p-panel-header {
     border: 1px solid #e5e7eb;
     padding: 1.25rem;
-    background: #f9fafb;
-    color: #374151;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
   }
