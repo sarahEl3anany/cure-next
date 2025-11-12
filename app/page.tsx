@@ -1,3 +1,10 @@
+import Header from "@/app/components/layouts/header";
+import Opening from "@/app/components/home/opening";
 export default function Home() {
-  return (<div>index</div>);
+  return (
+    <div>
+      <Header />
+      <Opening />
+    </div>
+  );
 }
