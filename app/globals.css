@@ -1,10 +1,10 @@
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
 @import 'primereact/resources/primereact.min.css';
-@import 'assets/fonts/georgia.css';
-@import 'assets/fonts/montserrat.css';
+@import '@/app/assets/fonts/georgia.css';
+@import '@/app/assets/fonts/montserrat.css';
 @import "tw-animate-css";
-@import 'assets/css/theme.css';
+@import '@/app/assets/css/theme.css';
 
 @custom-variant dark (&:is(.dark *));
 
