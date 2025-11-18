@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { PrimeReactProvider } from "primereact/api";
+import Header from "@/app/components/layouts/header";
+import Footer from "@/app/components/layouts/footer";
+
 import "./globals.css";
 import Image from "next/image";
 import l1 from "@/app/assets/img/sign-in/1.png";
@@ -23,10 +26,12 @@ export default async function RootLayout({
       <body>
         <PrimeReactProvider>
             {token ? (
-              <div className="relative min-h-screen flex bg-white overflow-hidden">
-                <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-10 md:px-20 z-10">
+              <div className="min-h-screen w-full bg-white">
+                  <Header />
+                  <div className="mt-20">
                   {children}
-                </div>
+                  </div>
+                <Footer />
               </div>
              ) : (
               <div className="relative min-h-screen flex bg-white overflow-hidden">
