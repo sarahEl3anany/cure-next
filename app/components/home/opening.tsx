@@ -7,12 +7,7 @@ import U1 from "@/app/assets/img/home/u1.png";
 import U2 from "@/app/assets/img/home/u2.png";
 function Opening() {
   return (
-    <section className="relative w-full flex flex-col items-center justify-center text-center pt-22">
-        <div className="absolute inset-0 z-1000 w-full h-screen flex items-center justify-center">
-        <div className="absolute w-[900px] h-[900px] border border-neutral-800 rounded-full opacity-10"></div>
-        <div className="absolute w-[700px] h-[700px] border border-neutral-800 rounded-full opacity-10"></div>
-        <div className="absolute w-[500px] h-[500px] border border-neutral-800 rounded-full opacity-10"></div>
-      </div>
+    <div className="relative w-full flex flex-col items-center justify-center text-center">
       <div className="flex items-center rounded-3xl bg-primary-50 px-4 py-1 gap-2 shadow-sm">
         <StarsComponent className="h-4 w-4 text-primary-500" />
         <span className="text-secondary-500 font-montserrat">
@@ -27,13 +22,13 @@ function Opening() {
         a few clicks. Whether you need an in-person visit consultation, we&apos;re
         here to connect you with the right care—fast, simple, and secure.
       </p>
-      <div className="absolute left-20 top-[55%] flex flex-col items-center gap-1 animate-fade">
+      <div className="absolute left-0 top-[60%] flex flex-col items-center gap-1 animate-fade">
         <MapPinComponent className="h-12 w-12" />
         <span className="font-georgia text-sm text-secondary-500 bg-neutral-50 px-4 py-1 rounded-full shadow">
           Doctors near you
         </span>
       </div>
-      <div className="absolute right-24 -bottom-10 rotate-18 flex items-center gap-2">
+      <div className="absolute right-4 -bottom-10 rotate-18 flex items-center gap-2">
         <ArrowComponent className="h-12 w-12 -rotate-10" />
         
         <div className="bg-neutral-50 px-5 py-2 rounded-full shadow text-secondary-500 font-montserrat">
@@ -69,7 +64,7 @@ function Opening() {
         </span>
       </div>
 
-    </section>
+    </div>
   );
 }
 

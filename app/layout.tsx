@@ -28,7 +28,14 @@ export default async function RootLayout({
             {token ? (
              <div className="min-h-screen w-full bg-white overflow-visible">
               <Header />
+              <section className="relative w-full flex flex-col items-center justify-center text-center pt-22">
+                <div className="absolute inset-0 z-1000 w-full h-screen flex items-center justify-center">
+                  <div className="absolute w-[1200px] h-[1200px] border border-neutral-800 rounded-full opacity-10"></div>
+                  <div className="absolute w-[700px] h-[700px] border border-neutral-800 rounded-full opacity-10"></div>
+                  <div className="absolute w-[300px] h-[300px] border border-neutral-800 rounded-full opacity-10"></div>
+                </div>
               {children}
+              </section>
               <Footer />
             </div>
              ) : (
