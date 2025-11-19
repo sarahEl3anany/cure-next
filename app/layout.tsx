@@ -26,15 +26,13 @@ export default async function RootLayout({
       <body>
         <PrimeReactProvider>
             {token ? (
-              <div className="min-h-screen w-full bg-white">
-                  <Header />
-                  <div className="mt-20">
-                  {children}
-                  </div>
-                <Footer />
-              </div>
+             <div className="min-h-screen w-full bg-white overflow-visible">
+              <Header />
+              {children}
+              <Footer />
+            </div>
              ) : (
-              <div className="relative min-h-screen flex bg-white overflow-hidden">
+              <div className="relative min-h-screen flex bg-white">
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-10 md:px-20 z-10">
                   <div className="w-full flex justify-start absolute top-0 left-0 p-5 md:p-10">
                     <HeartComponent className="absolute left-7 top-5 w-8 h-8 object-contain" />
