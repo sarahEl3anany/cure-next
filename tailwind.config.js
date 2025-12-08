@@ -1,0 +1,120 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#e8eff8',
+          100: '#b6cde9',
+          200: '#93b4de',
+          300: '#437dc6',
+          500: '#145db8',
+          600: '#1255a7',
+          700: '#0e4283',
+          800: '#0b3365',
+          900: '#08274d',
+        },
+        secondary: {
+          50: '#e6e8ea',
+          100: '#b2b7be',
+          200: '#8c949e',
+          300: '#586372',
+          400: '#374556',
+          500: '#05162c',
+          600: '#051428',
+          700: '#04101f',
+          800: '#030c18',
+          900: '#020912',
+        },
+        neutral: {
+          50: '#f5f6f7',
+          100: '#dfe2e5',
+          200: '#d0d4d8',
+          300: '#bbc1c7',
+          400: '#adb5bc',
+          500: '#99a2ab',
+          600: '#8b939c',
+          700: '#6d7379',
+          800: '#54595e',
+          900: '#404448',
+        },
+        red: {
+          50: '#ffeded',
+          100: '#fec7c8',
+          200: '#feacae',
+          300: '#fd8688',
+          400: '#fd6f71',
+          500: '#fc4b4e',
+          600: '#e54447',
+          700: '#b33537',
+          800: '#8b292b',
+          900: '#6a2021',
+        },
+        yellow: {
+          50: '#fff6e9',
+          100: '#ffe4bc',
+          200: '#ffd79b',
+          300: '#ffc46e',
+          400: '#ffb951',
+          500: '#ffa726',
+          600: '#e89823',
+          700: '#b5771b',
+          800: '#8c5c15',
+          900: '#6b4610',
+        },
+        blue: {
+          50: '#e8f4fc',
+          100: '#b6ddf6',
+          200: '#93ccf2',
+          300: '#62b5ec',
+          400: '#43a6e9',
+          500: '#1490e3',
+          600: '#1283cf',
+          700: '#0e66a1',
+          800: '#0b4f7d',
+          900: '#083c5f',
+        },
+        green: {
+          50: '#edf7ee',
+          100: '#c8e6c9',
+          200: '#addaaf',
+          300: '#87c98a',
+          400: '#70bf73',
+          500: '#4caf50',
+          600: '#459f49',
+          700: '#367c39',
+          800: '#2a602c',
+          900: '#204a22',
+        },
+      },
+      borderRadius: {
+        sm: '6px',   // calc(var(--radius) - 4px)
+        md: '8px',   // calc(var(--radius) - 2px)
+        lg: '10px',  // var(--radius)
+        xl: '14px',  // calc(var(--radius) + 4px)
+      },
+      fontSize: {
+        xs: '12px',
+        sm: '14px',
+        base: '16px',
+        lg: '18px',
+        xl: '20px',
+        '2xl': '24px',
+        '3xl': '30px',
+        '4xl': '36px',
+        '5xl': '48px',
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        georgia: ['Georgia', 'serif'],
+      }
+    },
+  },
+  plugins: [],
+}
+

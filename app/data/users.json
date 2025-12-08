@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Aya",
+    "email": "aya@example.com",
+    "password": "123456",
+    "phone": "0123456789"
+  },
+  {
+    "id": 2,
+    "name": "Omar",
+    "email": "omar@example.com",
+    "password": "password123",
+    "phone": "9876543210"
+  },
+  {
+    "id": 3,
+    "name": "Sarah",
+    "email": "sarah@example.com",
+    "password": "password456",
+    "phone": "1234567890"
+  },
+  {
+    "id": 1762871636703,
+    "name": "Sarah ElZeftawy",
+    "email": "sarah.3anany@gmail.com",
+    "password": "Sarah@123",
+    "phone": "+201009297726"
+  }
+]

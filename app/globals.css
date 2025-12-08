@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "primeicons/primeicons.css";
+@import './assets/fonts/georgia.css';
+@import './assets/fonts/montserrat.css';
+@import "tw-animate-css";
+
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary-50: #e8eff8 !important;
+  --color-primary-100: #b6cde9 !important;
+  --color-primary-200: #93b4de !important;
+  --color-primary-300: #437dc6 !important;
+  --color-primary-500: #145db8 !important;
+  --color-primary-600: #1255a7 !important;
+  --color-primary-700: #0e4283 !important;
+  --color-primary-800: #0b3365 !important;
+  --color-primary-900: #08274d !important;
+  --color-primary-color: #145db8 !important;
+  --color-primary-hover-color: #145db8 !important;
+  --color-checkbox-icon-size: 17px !important;
+  --color-checkbox-width: 17px !important;
+  --color-checkbox-height: 17px !important;
+  --color-checkbox-border-radius: 4px !important;
+  --color-checkbox-focus-ring-width: 2px !important;
+  --color-form-field-border-color: #145db8 !important;
+  --color-button-primary-active-background: #145db8 !important;
+
+  --color-secondary-50: #e6e8ea !important;
+  --color-secondary-100: #b2b7be !important;
+  --color-secondary-200: #8c949e !important;
+  --color-secondary-300: #586372 !important;
+  --color-secondary-400: #374556 !important;
+  --color-secondary-500: #05162c !important;
+  --color-secondary-600: #051428 !important;
+  --color-secondary-700: #04101f !important;
+  --color-secondary-800: #030c18 !important;
+  --color-secondary-900: #020912 !important;
+
+  --color-neutral-50: #f5f6f7 !important;
+  --color-neutral-100: #dfe2e5 !important;
+  --color-neutral-200: #d0d4d8 !important;
+  --color-neutral-300: #bbc1c7 !important;
+  --color-neutral-400: #adb5bc !important;
+  --color-neutral-500: #99a2ab !important;
+  --color-neutral-600: #8b939c !important;
+  --color-neutral-700: #6d7379 !important;
+  --color-neutral-800: #54595e !important;
+  --color-neutral-900: #404448 !important;
+
+  --color-red-50: #ffeded !important;
+  --color-red-100: #fec7c8 !important;
+  --color-red-200: #feacae !important;
+  --color-red-300: #fd8688 !important;
+  --color-red-400: #fd6f71 !important;
+  --color-red-500: #fc4b4e !important;
+  --color-red-600: #e54447 !important;
+  --color-red-700: #b33537 !important;
+  --color-red-800: #8b292b !important;
+  --color-red-900: #6a2021 !important;
+
+  --color-yellow-50: #fff6e9 !important;
+  --color-yellow-100: #ffe4bc !important;
+  --color-yellow-200: #ffd79b !important;
+  --color-yellow-300: #ffc46e !important;
+  --color-yellow-400: #ffb951 !important;
+  --color-yellow-500: #ffa726 !important;
+  --color-yellow-600: #e89823 !important;
+  --color-yellow-700: #b5771b !important;
+  --color-yellow-800: #8c5c15 !important;
+  --color-yellow-900: #6b4610 !important;
+
+  --color-blue-50: #e8f4fc !important;
+  --color-blue-100: #b6ddf6 !important;
+  --color-blue-200: #93ccf2 !important;
+  --color-blue-300: #62b5ec !important;
+  --color-blue-400: #43a6e9 !important;
+  --color-blue-500: #1490e3 !important;
+  --color-blue-600: #1283cf !important;
+  --color-blue-700: #0e66a1 !important;
+  --color-blue-800: #0b4f7d !important;
+  --color-blue-900: #083c5f !important;
+
+  --color-green-50: #edf7ee !important;
+  --color-green-100: #c8e6c9 !important;
+  --color-green-200: #addaaf !important;
+  --color-green-300: #87c98a !important;
+  --color-green-400: #70bf73 !important;
+  --color-green-500: #4caf50 !important;
+  --color-green-600: #459f49 !important;
+  --color-green-700: #367c39 !important;
+  --color-green-800: #2a602c !important;
+  --color-green-900: #204a22 !important;
+}
+:root {
+  /* font family */
+  --font-montserrat: 'Montserrat' !important;
+  --font-montserrat-medium: 'Montserrat-Medium' !important;
+  --font-montserrat-bold: 'Montserrat-Bold' !important;
+  --font-georgia: 'Georgia' !important;
+  .calendar-custom .p-datepicker .p-datepicker-header .p-datepicker-month{
+    font-family: var(--font-montserrat) !important;
+  }
+}
